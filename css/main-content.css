@@ -1,0 +1,76 @@
+/* color codes
+
+Nav: #393C4E
+Nav Light: #4D5376
+Highlight: #E7E247
+Body: #3D3B30
+White: #E9EDDE
+
+*/
+main {
+    width: 100%;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+}
+main .pc-container {
+    flex-wrap: wrap;
+    justify-content: center;
+}
+main .section {
+    display: flex;
+    flex-wrap: wrap;
+    color: #E9EDDE;
+    width: 100%;
+}
+.section div {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100%;
+    margin: 20px 0px;
+}
+
+.title {
+    font-size: 1.1em;
+    color: white;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+hr {
+    width: 50px;
+    margin: 20px 0px;
+    border: none;
+    border-bottom: 5px solid #E7E247;
+}
+.image-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    order: 1;
+}
+.image-container img {
+    width: 300px;
+}
+
+@media (min-width: 900px) {
+    main .section {
+        padding: 20px 0px;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+    .image-container {
+        order: 0;
+    }
+    .image-container:nth-last-of-type(odd){
+        align-items: end;
+        justify-content: end;
+    }
+    .image-container:nth-last-of-type(even){
+        align-items: flex-start;
+        justify-content: start;
+    }
+}

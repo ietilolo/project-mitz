@@ -1,0 +1,43 @@
+/* color codes
+
+Nav: #393C4E
+Nav Light: #4D5376
+Highlight: #E7E247
+Body: #3D3B30
+White: #E9EDDE
+
+*/
+* { margin: 0px; padding: 0px; box-sizing: border-box;}
+html {
+    width: 100%;
+}
+body {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    overflow-x: hidden;
+    background-color: #3D3B30;
+    font-family: 'Roboto', sans-serif;
+}
+.highlight {
+    color: #E7E247;
+}
+.pc-container {
+    display: flex;
+    width: 100%;
+    padding: 20px;
+}
+.col {
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+/* responsive setting */
+@media (min-width: 900px) {
+    /* body { background-color: black; } */
+    .pc-container {
+        width: 900px;
+        padding: 0px;
+    }
+}

@@ -1,0 +1,56 @@
+/* color codes
+
+Nav: #393C4E
+Nav Light: #4D5376
+Highlight: #E7E247
+Body: #3D3B30
+White: #E9EDDE
+
+*/
+
+/* header */
+header {
+    padding: 0px;
+    width: 100%;
+    display: flex;
+    background-color: #393C4E;
+    box-shadow: 2px 10px 20px -10px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 2px 10px 20px -10px rgba(0,0,0,0.75);
+    -moz-box-shadow: 2px 10px 20px -10px rgba(0,0,0,0.75);
+    justify-content: center;
+}
+.logo {
+    color: white;
+    font-size: 1em;
+    border-left: 4px solid #E9EDDE;
+    padding-left: 10px;
+    width: 50%;
+}
+.logo h1 {
+    font-size: 1.2em;
+}
+.search {
+    margin-top: auto;
+    margin-bottom: auto;
+    padding: 0px;
+    display: flex;
+    width: 50%;
+    justify-content: flex-end;
+}
+.search input {
+    width: 100px;
+    margin-right: 5px;
+    padding: 10px 15px;
+    border-radius: 40px;
+    border: none;
+    background-color: #4D5376;
+    color: white;
+}
+.search ::placeholder { color: white; text-transform: uppercase;}
+
+/* responsive setting */
+@media (min-width: 900px) {
+    header .pc-container {
+        padding: 20px 0px;
+    }
+}

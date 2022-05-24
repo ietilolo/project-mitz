@@ -1,0 +1,49 @@
+/* color codes
+
+Nav: #393C4E
+Nav Light: #4D5376
+Highlight: #E7E247
+Body: #3D3B30
+White: #E9EDDE
+
+*/
+.slideshow {
+    list-style-type: none;
+    margin: 0px;
+    margin-bottom: 320px;
+    text-decoration: none;
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    /* overflow: hidden; */
+    overflow-x: hidden;
+}
+.slideshow li {
+    width: 100%;
+    height: 320px;
+    position: absolute;
+    opacity: 0;
+    overflow: hidden;
+    transition: .8s;
+}
+.slideshow li img {
+    width: 100%;
+    box-shadow: 2px 10px 20px -10px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 2px 10px 20px -10px rgba(0,0,0,0.75);
+    -moz-box-shadow: 2px 10px 20px -10px rgba(0,0,0,0.75);
+}
+.slideshow li.on {
+    opacity: 1;
+}
+
+/* responsive setting */
+@media (min-width: 700px) {
+    .slideshow { margin-bottom: 500px; }
+    .slideshow li { height: 500px; }
+}
+
+/* responsive setting */
+@media (min-width: 900px) {
+    .slideshow { margin-bottom: 500px; justify-content: center; }
+    .slideshow li { height: 500px; width: 900px}
+}
